@@ -18,9 +18,8 @@ import reportWebVitals from './reportWebVitals';
 // setInterval(currentDate, 1000)
 
 const dateElement = (
-    <div>
-        <h1>Render a single element</h1>
-        <h2> With Date and time {new Date().toLocaleDateString()}, {new Date().toLocaleTimeString()}</h2>
+    <div style={{textAlign:"center"}}>
+        <h3>Render a single element With Date and time {new Date().toLocaleDateString()}, {new Date().toLocaleTimeString()}</h3>
     </div>
 )
 
@@ -28,7 +27,7 @@ ReactDOM.render(
     <React.StrictMode>
         <App/>
         {dateElement}
-    </React.StrictMode>,
+     </React.StrictMode>,
 
     document.getElementById('root')
 );
